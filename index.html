@@ -15,6 +15,49 @@
 
 <body>
 
+    <!-- Making navigation bar using bootatrap class: name, theme, small-screen, color, stick it to top -->
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <!-- Container class is used to make width similar to the page. -->
+        <div class="container">
+            <!-- use toggle button for wraping navbar in small screens. -->
+            <!-- class: toggle button, type button, JavaScript bootstrap components, target of data is element with id "Navabar". -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+    <!-- display icon on button -->
+    <span class="navbar-toggler-icon"></span>
+</button>
+            <!-- anchor tag using here to name of the brand. -->
+            <!-- the margin class will make brand name near to the button. -->
+            <a href="#" class="navbar-brand mr-auto">Restorante Con Fusion</a>
+
+            <!-- hide and show navbar in small screens, by usind bootstrap and javascript components. -->
+            <div class="collapse navbar-collapse" id="Navbar">
+
+
+                <!-- Add links to link other pages to the Home page. -->
+                <!-- mr-auto = margin auto "utility class". The content will be pushed as left as possible. -->
+                <!-- active class is used to denote the current state. -->
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutus.html" class="nav-link">ABOUT</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">MENU</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -41,7 +84,7 @@
             <div class="col col-sm order-sm-first col-md">
 
                 <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
         </div>
 
@@ -52,7 +95,7 @@
             </div>
             <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
@@ -65,7 +108,7 @@
             <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             </div>
         </div>
     </div>
@@ -78,10 +121,10 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">About</a></li>
-                        <li><a href="# ">Menu</a></li>
-                        <li><a href="# ">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <!-- Extra small = 7+ 4(used upside)= 11(left 1 for offset) -->
